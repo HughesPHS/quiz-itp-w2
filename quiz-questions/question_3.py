@@ -16,14 +16,14 @@ def eldest_customer_per_state(customers):
         }, {
             'name': 'John',  # Eldest
             'age': 31
-        }],
+                }],
         'NY': [{
             'name': 'Linda',  # Eldest
             'age': 71
         }, {
             'name': 'Lisa',
             'age': 25
-        }]
+                }]
     }
     eldest_customer_per_state(customers)
     >>>
@@ -31,15 +31,30 @@ def eldest_customer_per_state(customers):
         'UT': {
             'name': 'John',
             'age': 31
-        },
+                },
         'NY': {
             'name': 'Linda',
             'age': 71
-        }
+                }
     }
     """
     # Write your code here
-    pass
+    answer = {
+
+    }
+    for state in customers:
+        tempAnswer = {
+            'name' : ""
+            'age' : 0,
+        }
+        for customer in state:
+            if customer[state] == None:
+                answer[state] = None
+            if customer['age'] > tempAnswer['age']:
+                tempAnswer['age'] = customer['age']
+                tempAnswer['name'] = customer['name']
+        answer[state] = tempAnswer    
+    return answer
 
 
 class EldestCustomerTestCase(unittest.TestCase):
