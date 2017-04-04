@@ -32,13 +32,13 @@ def number_of_customers_per_state(customers):
     answer = {
 
     }
-    for x in customers:
-        if customers[x] == None:
-            answer[x] = 0
+    for state in customers:
+        if customers[state] == None:
+            answer[state] = 0
         i = 0
-        for y in x:
+        for y in state:
             i += 1
-        answer[x] = i    
+        answer[state] = i    
     return answer
 
 
