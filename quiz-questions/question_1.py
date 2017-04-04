@@ -16,8 +16,8 @@ def question_1():
 
     c = c + test_scope(5)
     # === CODE ENDS === #
-
+    c = 7 + (11 + 3 + 7)
     What will be the final value of the variable c?
     """
     # Return the CORRECT value of `c`
-    pass
+    return 28
