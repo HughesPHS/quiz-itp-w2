@@ -37,7 +37,7 @@ def number_of_customers_per_state(customers):
             answer[x] = 0
         i = 0
         for y in x:
-            i++
+            i += 1
         answer[x] = i    
     return answer
 
