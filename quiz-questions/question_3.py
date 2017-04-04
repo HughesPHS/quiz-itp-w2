@@ -48,7 +48,7 @@ def eldest_customer_per_state(customers):
             'age' : 0,
         }
         for customer in state:
-            if customer[state] == None:
+            if not customer[state]:
                 answer[state] = None
             if customer['age'] > tempAnswer['age']:
                 tempAnswer['age'] = customer['age']
