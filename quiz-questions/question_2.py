@@ -29,7 +29,17 @@ def number_of_customers_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    answer = {
+
+    }
+    for x in customers:
+        if customers[x] == None:
+            answer[x] = 0
+        i = 0
+        for y in x:
+            i++
+        answer[x] = i    
+    return answer
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
