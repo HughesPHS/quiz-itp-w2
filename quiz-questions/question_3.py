@@ -1,6 +1,6 @@
 import unittest
 
-12
+
 def eldest_customer_per_state(customers):
     """Eldest customer per state.
 
